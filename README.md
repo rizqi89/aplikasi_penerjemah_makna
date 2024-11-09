@@ -1,1 +1,1 @@
-# aplikasi_penerjemah_makna
+# aplikasi_penerjemah_kata

@@ -1,0 +1,102 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Results Section */
+.results {
+    margin-top: 20px;
+}
+
+.results h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Ukuran font lebih besar untuk judul hasil */
+}
+
+.result-content {
+    background-color: #e9f5ff; /* Light blue background */
+    border: 1px solid #3498db; /* Blue border */
+    border-radius: 4px;
+    padding: 20px; /* Tambahkan padding untuk ruang yang lebih baik */
+    margin-top: 10px; /* Add margin to separate from heading */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.result-content:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.result-content h3 {
+    margin-bottom: 10px;
+    color: #2980b9; /* Darker blue for the heading */
+    font-size: 1.2em; /* Ukuran font lebih besar untuk sub-judul */
+}
+
+.result-content pre {
+    font-size: 1em; /* Ukuran font untuk teks hasil pencarian */
+    line-height: 1.5; /* Jarak antar baris untuk keterbacaan yang lebih baik */
+    white-space: pre-wrap; /* Preserve whitespace for preformatted text */
+    overflow-x: auto; /* Allow horizontal scrolling if content is too wide */
+}

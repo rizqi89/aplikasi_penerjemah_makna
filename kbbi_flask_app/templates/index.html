@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian KBBI</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pencarian Makna Kata</h1>
+        <form method="POST" class="search-form">
+            <input type="text" name="word" placeholder="Masukkan kata" required>
+            <button type="submit">Cari</button>
+        </form>
+
+        <div class="results">
+            {% if result %}
+                <h2>Hasil Pencarian untuk: <strong>{{ result.nama }}</strong></h2>
+                <div class="result-content">
+                    <h3>Definisi:</h3>
+                    <pre>{{ result }}</pre>
+                </div>
+            {% elif result is not none %}
+                <h2>Kata tidak ditemukan.</h2>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
